@@ -1,0 +1,89 @@
+.NavbarItems{
+    background: #282c34;
+    height: 50px;
+    display: flex;
+    font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+    rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border: 0;
+  outline: 0;
+  position: sticky; top: 0;
+  z-index: 1;
+}
+
+.logo{
+    margin-left: 2rem;
+    cursor: pointer;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    text-align: end;
+  
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 40px;
+    list-style: none;
+    text-align: end;
+    width: 80vw;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    
+    text-decoration: none;
+  }
+  .menu-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.5rem;
+  }
+  .menu_m{
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+   
+      .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 200px;
+        position: absolute;
+        top: 80%;
+        left: -100%;
+        opacity: 1%;
+        transition: all 0.5s ease-out;
+    }
+    
+    .nav-menu.active{
+        background-color: #282c34;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease-out;
+        z-index: 1;
+        
+    }
+      .menu{
+    display: none;
+      }
+      .menu_m{
+        display: inline;
+        float: right;
+       width: 80vw;
+      }
+      .navbar{
+        display: none;
+      }
+      
+  }

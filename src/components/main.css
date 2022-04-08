@@ -1,0 +1,95 @@
+.top{
+    background-color: #282c34;
+    width: 100vw;
+    height: 80vh;
+   
+}
+.logo{
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.contact{
+    margin: 0 auto;
+    width: 640px;
+}
+.welcome{
+    font-family: 'Hurricane', cursive;
+color: white;
+text-align: center;
+}
+.welcome_p{
+    font-family: 'Oswald', sans-serif;
+color: white;
+margin-left: 1rem;
+}
+.btn{
+    margin: 2rem;
+    padding: 9px 20px;
+    border-radius: 4px;
+    border: 1px;
+    font-size: 15px;
+    background: white;
+    color: #282c34; 
+}
+.btn:hover{
+    margin: 2rem;
+    padding: 9px 20px;
+    border-radius: 4px;
+    border: 1px;
+    font-size: 18px;
+    background: white;
+    color: #282c34; 
+    transition: all 0.3s ease;
+}
+.hww{
+    padding: 30px;
+   
+    margin: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: rgba(50, 50, 93, 0.14902) 0px 3px 7px,
+      rgba(0, 0, 0, 0.0196078) 0px 3px 0px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background: white;
+  
+  }
+  .carousel{
+      z-index: 0;
+  }
+  .btn_m{
+    display: none;
+ }
+ .hwwscroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.hwwscroll::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.hwwscroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #282c34;
+}
+  @media screen and (max-width: 960px) {
+    .btn{
+       display: none;
+    }
+    .btn_m{
+        display: block;
+     }
+    .btn_m{
+        margin: 2rem;
+        padding: 8px 20px;
+        border-radius: 4px;
+        border: 1px;
+        font-size: 15px;
+        background: white;
+        color: #282c34; 
+    }
+}
